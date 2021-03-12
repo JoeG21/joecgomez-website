@@ -1,0 +1,143 @@
+.contact-container {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 90vh;
+    width: 90vw;
+    font-size: 1.5vw;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-label {
+    font-size: 1.5vw;
+}
+
+.email-field {
+    height: 5vh;
+    width: 50vw;
+    font-size: 1.5vw;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: .5vw;
+}
+
+.email-mess {
+    height: 20vh;
+    width: 50vw;
+    margin: .5vw;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.email-send {
+    margin: 2vh;
+    background-color: white;
+    height: 5vh;
+    width: 15vw;
+    font-size: 1.5vw;
+    font-family: courgette;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+@media (orientation: portrait) and (max-height: 1200px) {
+    .big-container {
+        height: 90vh;
+    }
+
+    .contact-container {
+        height: auto;
+        font-size: 6vw;
+    }
+
+    .email-label {
+        font-size: 7vw;
+    }
+
+    .email-field {
+        font-size: 5vw;
+    }
+
+    .email-mess {
+        height: 60vw;
+        font-size: 5vw;
+    }
+
+    .email-send {
+        height: 8vh;
+        width: 30vw;
+        font-size: 7vw;
+    }
+}
+
+@media (orientation: portrait) and (min-height: 1300px) {
+    .big-container {
+        height: 90vh;
+    }
+
+    .contact-container {
+        height: auto;
+        font-size: 6vw;
+    }
+
+    .email-label {
+        font-size: 7vw;
+    }
+
+    .email-field {
+        font-size: 5vw;
+    }
+
+    .email-mess {
+        height: 60vw;
+        font-size: 5vw;
+    }
+
+    .email-send {
+        height: 8vh;
+        width: 30vw;
+        font-size: 7vw;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1500px) {
+    .big-container {
+        height: 90vh;
+    }
+
+    .contact-container {
+        height: auto;
+        font-size: 3vw;
+    }
+
+    .email-label {
+        font-size: 3vw;
+    }
+
+    .email-field {
+        font-size: 2.5vw;
+    }
+
+    .email-mess {
+        height: 15vw;
+        font-size: 2.5vw;
+    }
+
+    .email-send {
+        height: 10vh;
+        width: 15vw;
+        font-size: 3vw;
+    }
+}

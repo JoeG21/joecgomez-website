@@ -1,0 +1,87 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  font-size: 1.8vw;
+  background-color: rgb(37, 37, 37);
+  border-bottom: 4px solid #ffffff;
+  padding: .2vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: nav-load var(--nav-load-time) ease-in;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(150, 150, 150);
+}
+
+a:focus {
+  color: #ffbb00;
+}
+
+@media (orientation: portrait) and (max-height: 1200px) {
+  .navbar {
+    font-size: 5vw;
+    padding: 2vw;
+  }
+}
+
+@media (orientation: portrait) and (min-height: 1300px) {
+  .navbar {
+    font-size: 4.5vw;
+    padding: 2vw;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1200px) {
+  .navbar {
+    font-size: 4vw;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1300px) {
+  .navbar {
+    font-size: 2.5vw;
+  }
+}
+
+.loading {
+  height: 100vh;
+  width: 100vw;
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  color: green;
+  animation-name: loading;
+  animation-duration: 3.5s;
+}
+
+@keyframes loading {
+  0% {background-color: #000000;}
+  50% {background-color: #000000;}
+  100% {background-image: white;}
+}
+
+@media (orientation: portrait) {
+  .loading {
+    font-size: 5vw;
+  }
+}
+
+@media (orientation: landscape), (max-width: 1500px) {
+  .loading {
+    font-size: 2vw;
+  }
+}

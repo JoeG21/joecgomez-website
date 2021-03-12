@@ -1,0 +1,132 @@
+.big-container {
+    height: 90vh;
+}
+
+.projects-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90vw;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.project-card {
+    background-color: rgb(37, 37, 37);
+    width: 25vw;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    margin: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.description {
+    margin: .5vh;
+    font-size: 1.2vw;
+}
+
+.title {
+    color: #90c9bd;
+    text-decoration: underline;
+}
+
+.readMe {
+    color: #c0e0d9;
+}
+
+.tech {
+    color: #ffbb00;
+    text-decoration: underline;
+}
+
+.tools {
+    color: #e0ba52;
+}
+
+.repo {
+    color: white;
+    font-size: 1.5vw;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 8px 8px;
+    background-color: black;
+}
+
+iframe.project-vid {
+    height: 30vh;
+    border-radius: 8px 8px 0px 0px;
+}
+
+img.repo-pic {
+    height: 4vh;
+    margin-right: .5vw;
+}
+
+@media (orientation: portrait) and (max-height: 1200px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 80vw;
+    }
+
+    .description {
+        font-size: 5vw;
+    }
+
+    .repo {
+        font-size: 5vw;
+    }
+}
+
+@media (orientation: portrait) and (min-height: 1300px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 80vw;
+    }
+
+    .description {
+        font-size: 5vw;
+    }
+
+    .repo {
+        font-size: 5vw;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1500px) {
+    .project-card {
+        width: 35vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .description {
+        font-size: 2.2vw;
+    }
+
+    .repo {
+        height: 10vh;
+        font-size: 3vw;
+    }
+
+    img.repo-pic {
+        height: 6.5vh;
+    }
+}
