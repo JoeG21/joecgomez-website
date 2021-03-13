@@ -29,7 +29,7 @@ const ContactInfo = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
+        emailjs.sendForm(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, e.target, REACT_APP_USER_ID)
             .then((result) => {
                 console.log(result.text);
                 e.target.reset();
