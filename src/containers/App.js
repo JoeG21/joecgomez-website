@@ -74,7 +74,29 @@ const App = () => {
 
   return (
     <>
-      {loading ? loadingComponent : application}
+      <BrowserRouter>
+        <Navbar />
+        <div className='App'>
+          <Switch>
+            <Route path='/about'>
+              <About />
+            </Route>
+            <Route path='/contact'>
+              <Contact />
+            </Route>
+            <Route path='/projects'>
+              <Projects />
+            </Route>
+            <Route path='/resume'>
+              <Resume />
+            </Route>
+            <Route path='/'>
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </BrowserRouter>
+      {/* {loading ? loadingComponent : application} */}
       {/* {application} */}
     </>
   );
