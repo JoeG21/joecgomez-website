@@ -21,6 +21,4 @@ const Resume = () => {
     )
 }
 
-// https://drive.google.com/file/d/1puL5Ecgiugz0ugZe25DqS0mdPGC1z8Bu/view?usp=sharing
-
 export default Resume
