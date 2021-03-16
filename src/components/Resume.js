@@ -9,9 +9,9 @@ const Resume = () => {
                 title="Joe C Gomez's Resume"
                 className='resume'
                 frameBorder='0'
-                src='https://drive.google.com/file/d/1bBYV91pMftF0QVdLYZd3K3upIUkIHEFx/preview'>
+                src='https://drive.google.com/file/d/1puL5Ecgiugz0ugZe25DqS0mdPGC1z8Bu/preview'>
             </iframe>
-            <a href='https://drive.google.com/uc?export=download&id=1bBYV91pMftF0QVdLYZd3K3upIUkIHEFx'>
+            <a href='https://drive.google.com/uc?export=download&id=1puL5Ecgiugz0ugZe25DqS0mdPGC1z8Bu'>
                 <div className='download-container'>
                     <img src={download} alt='Download Resume' className='download' />
                     <p> Download </p>
@@ -20,5 +20,7 @@ const Resume = () => {
         </div>
     )
 }
+
+// https://drive.google.com/file/d/1puL5Ecgiugz0ugZe25DqS0mdPGC1z8Bu/view?usp=sharing
 
 export default Resume
