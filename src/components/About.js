@@ -19,7 +19,7 @@ const Home = () => {
                         My love for technology first started with my family's Gateway PC.
                         Since then, I've been fascinated with the complexity of the internet and all the code that goes into making an application.
                         However, it never crossed my mind to learn how to code because it looked intimidating.
-                        It wasn't until 2020 when I finally stretched that itch I had and found a new love!
+                        It wasn't until 2020 when I finally scratched that itch I had and found a new love!
                     </p>
                     </div>
                 </div>
