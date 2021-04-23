@@ -94,7 +94,7 @@ const Projects = () => {
                             <h2 className='title'> Jmakon Prime </h2>
                             <p className='readMe'>
                                 Jmakon Prime is an e-commerce website where you can browse through every single item inside the shop.
-                                User can also add items to their cart without having to be log in.
+                                Users can also add items to their cart without having to be log in.
                                 But if a user dose want to checkout then it redirects you to the Sign up/Log In page.
                                 </p>
                             <h2 className='tech'> Tech Stack </h2>
