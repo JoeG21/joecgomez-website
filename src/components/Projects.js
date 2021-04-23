@@ -69,9 +69,9 @@ const Projects = () => {
                         <div className='description'>
                             <h2 className='title'> Quest and Key </h2>
                             <p className='readMe'>
-                                This game tests your math skills while having the timer behind your back.
-                                Answer the question correctly to add time, but answer the question incorrectly then time will be taken off the timer.
-                                See how long you can last to beat your highscore.
+                                Quest and Key is a game that tests your math skills while having the timer behind your back.
+                                Answering the question correctly will add time, but answer the question incorrectly then time will be taken off the timer.
+                                See how long you can last in order to beat your hight score.
                             </p>
                             <h2 className='tech'> Tech Stack </h2>
                             <p className='tools'> Ruby on Rails <br /> JavaScript <br /> jQuery </p>
@@ -93,9 +93,9 @@ const Projects = () => {
                         <div className='description'>
                             <h2 className='title'> Jmakon Prime </h2>
                             <p className='readMe'>
-                                Jmakon Prime is an e-commerce website where you can browse through every single item inside the shop.
-                                Users can also add items to their cart without having to be log in.
-                                But if a user dose want to checkout then it redirects you to the Sign up/Log In page.
+                                Jmakon Prime is an e-commerce website that allows you to browse through items.
+                                Users can also add items to their cart without having to be logged in.
+                                However, if a user does want to checkout without being logged in, then it redirects you to the Sign up / Log in page.
                             </p>
                             <h2 className='tech'> Tech Stack </h2>
                             <p className='tools'> Ruby on Rails <br /> SQLite <br /> Bootstrap </p>
