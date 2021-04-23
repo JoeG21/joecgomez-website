@@ -14,7 +14,7 @@ const ContactInfo = () => {
     const [sent, setSent] = useState(false)
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+            e.preventDefault();
         emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
             .then((result) => {
                 console.log(result.text);
