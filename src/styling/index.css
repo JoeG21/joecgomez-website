@@ -3,6 +3,14 @@ code {
     monospace;
 }
 
+html { 
+  background: url('../pictures/background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,7 +19,6 @@ body {
   font-family: courgette;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('../pictures/background.jpg');
   --nav-load-time: 400ms;
   --name-load-time: 1000ms;
   --links-load-time: 1000ms;
