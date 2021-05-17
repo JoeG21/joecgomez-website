@@ -42,7 +42,7 @@ const Projects = () => {
                         <div className='description'>
                             <h2 className='title'> List Keeper </h2>
                             <p className='readMe'>
-                                List Keeper keeps track of all the notes you make, and delete them with a simple click.
+                                List Keeper makes tracking all of your notes convenient, and delete them with a simple click.
                                 A search bar feature makes it easy to navigate through all of your notes.
                                 Simply search for the title of the note, then it will filter out and give you the most relevant findings.
                                 </p>

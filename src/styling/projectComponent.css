@@ -35,25 +35,31 @@
 
 .title {
     color: #90c9bd;
+    font-family: cursive;
+    font-size: 2vw;
     text-decoration: underline;
 }
 
 .readMe {
     color: #c0e0d9;
+    font-size: 1.8vw;
 }
 
 .tech {
     color: #ffbb00;
+    font-family: cursive;
+    font-size: 2vw;
     text-decoration: underline;
 }
 
 .tools {
     color: #e0ba52;
+    font-size: 1.8vw;
 }
 
 .repo {
     color: white;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     height: 7vh;
     display: flex;
     justify-content: center;
