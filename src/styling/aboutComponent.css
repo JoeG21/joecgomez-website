@@ -12,7 +12,7 @@
 }
 
 .about {
-    margin: .5vw;
+    margin: 2vw;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -21,8 +21,8 @@
 }
 
 .about-pic {
-   height: 50vh;
-   width: 18vw;
+   height: 55vh;
+   width: 25vw;
    margin-top: 2vh;
    border: 2px white solid;
    border-radius: 8px;
@@ -54,7 +54,7 @@
     }
 
     .about-pic {
-        height: 65vh;
+        height: 60vh;
         width: 70vw;
     }
 

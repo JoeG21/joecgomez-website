@@ -30,7 +30,6 @@
 
 .description {
     margin: .5vh;
-    font-size: 1.2vw;
 }
 
 .title {
@@ -88,7 +87,19 @@ img.repo-pic {
         width: 80vw;
     }
 
-    .description {
+    .title {
+        font-size: 7vw;
+    }
+
+    .readMe {
+        font-size: 5vw;
+    }
+
+    .tech {
+        font-size: 7vw;
+    }
+
+    .tools {
         font-size: 5vw;
     }
 
@@ -107,7 +118,19 @@ img.repo-pic {
         width: 80vw;
     }
 
-    .description {
+    .title {
+        font-size: 6vw;
+    }
+
+    .readMe {
+        font-size: 5vw;
+    }
+
+    .tech {
+        font-size: 6vw;
+    }
+
+    .tools {
         font-size: 5vw;
     }
 
@@ -123,8 +146,20 @@ img.repo-pic {
         margin-right: 5vw;
     }
 
-    .description {
-        font-size: 2.2vw;
+    .title {
+        font-size: 4vw;
+    }
+
+    .readMe {
+        font-size: 2.5vw;
+    }
+
+    .tech {
+        font-size: 4vw;
+    }
+
+    .tools {
+        font-size: 2.5vw;
     }
 
     .repo {
