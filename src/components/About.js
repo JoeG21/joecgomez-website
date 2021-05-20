@@ -10,7 +10,7 @@ const Home = () => {
                     <div className='about-des'>
                         <p>
                         Hey there! My name is Joe Gomez and when I am not enjoying time with my family or friends, I am hard at work learning to better myself through programming. 
-                        My love for technology came when my family purchased our first PC. Windows, Microsoft, the internet! 
+                        My love for technology came when my family purchased our first PC. Windows, Microsoft, the Internet! 
                         It was all so new and fascinating to me. 
                         I was always in awe at how all of it worked and always remained curious throughout my life.
                         It wasn't until after graduating High School that I saw how lucrative of a field programming could be and how I could finally learn to solve those problems I always wondered about.
