@@ -8,7 +8,7 @@ import About from '../components/About'
 
 import '../styling/App.css'
 import '../styling/homeComponent.css'
-import '../styling/projectComponent.css'
+import '../styling/Project.css'
 import '../styling/aboutComponent.css'
 import '../styling/resumeComponent.css'
 import '../styling/contactComponent.css'
@@ -74,8 +74,8 @@ const App = () => {
 
   return (
     <>
-      {loading ? loadingComponent : application}
-      {/* {application} */}
+      {/* {loading ? loadingComponent : application} */}
+      {application}
     </>
   );
 }

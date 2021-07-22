@@ -1,5 +1,13 @@
+@font-face {
+  font-family: 'Playball-Regular';
+  src: url('../fonts/Playball-Regular.ttf');
+}
+
 .App {
-  height: 100vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  font-size: 16px;
+  font-family: courgette;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,6 +15,7 @@
 
 .navbar {
   font-size: 1.8vw;
+  font-family: 'Playball-Regular';
   background-color: rgb(37, 37, 37);
   border-bottom: 4px solid #ffffff;
   padding: .2vw;

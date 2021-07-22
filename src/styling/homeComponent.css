@@ -1,12 +1,7 @@
-@font-face {
-    font-family: 'Playball-Regular';
-    src: url('../fonts/Playball-Regular.ttf');
-}
-
 .home {
     height: 90vh;
     width: 90vw;
-    font-family: Playball-Regular;
+    font-family: 'Playball-Regular';
     color: rgb(0, 0, 0);
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: rgb(37, 37, 37);
