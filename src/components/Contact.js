@@ -14,7 +14,7 @@ const ContactInfo = () => {
     const [sent, setSent] = useState(false)
 
     const handleSubmit = (e) => {
-            e.preventDefault();
+        e.preventDefault();
         emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
             .then((result) => {
                 console.log(result.text);
@@ -32,33 +32,34 @@ const ContactInfo = () => {
     }
 
     return (
-        <>
-            <div className='big-container'>
-                <div className='contact-container'>
-                    <h2> Contact Form </h2>
-                    <form className="contact-form" onSubmit={e => handleSubmit(e)}>
-                        <input type="hidden" name="contact_number" />
+        <div className='contact-container'>
+            <h1> Contact Form </h1>
 
-                        <label className='email-label'>Name</label>
-                        <input type="text" name="name" className='email-field' onChange={e => setName(e.target.value)} required />
+            <form className="contact-form" onSubmit={e => handleSubmit(e)}>
+                <input type="hidden" name="contact_number" />
 
-                        <label className='email-label'>Subject</label>
-                        <input type="text" name="subject"  className='email-field' onChange={e => setSubject(e.target.value)} required />
+                <label className='form-label'>Name</label>
+                <input type="text" name="name" className='form-field' onChange={e => setName(e.target.value)} required />
 
-                        <label className='email-label'>Email</label>
-                        <input type="email" name="email"  className='email-field' onChange={e => setEmail(e.target.value)} required />
+                <label className='form-label'>Subject</label>
+                <input type="text" name="subject" className='form-field' onChange={e => setSubject(e.target.value)} required />
 
-                        <label className='email-label'>Message</label>
-                        <textarea name="message" className='email-mess' onChange={e => setMessage(e.target.value)} required />
+                <label className='form-label'>Email</label>
+                <input type="email" name="email" className='form-field' onChange={e => setEmail(e.target.value)} required />
 
-                        <input type="submit" value="Send" className='email-send' onClick={() => setOpen(true)}/>
-                    </form>
+                <label className='form-label'>Message</label>
+                <textarea name="message" className='form-mess' onChange={e => setMessage(e.target.value)} required />
 
-                    <Modal open={open} sent={sent} onClose={onClose}/>
+
+                <div className='send-button-container'>
+                    <button type="submit"  className='send-button' onClick={() => setOpen(true)}>
+                        Send
+                    </button>
                 </div>
-                <br />
-            </div>
-        </>
+            </form>
+
+            <Modal open={open} sent={sent} onClose={onClose} />
+        </div>
     );
 }
 

@@ -7,11 +7,11 @@ import Contact from '../components/Contact';
 import About from '../components/About'
 
 import '../styling/App.css'
-import '../styling/homeComponent.css'
+import '../styling/Home.css'
 import '../styling/Project.css'
-import '../styling/aboutComponent.css'
-import '../styling/resumeComponent.css'
-import '../styling/contactComponent.css'
+import '../styling/About.css'
+import '../styling/Resume.css'
+import '../styling/Contact.css'
 import Typical from 'react-typical'
 import {
   BrowserRouter,
@@ -48,8 +48,8 @@ const App = () => {
 
   let application = (
     <BrowserRouter>
-      <Navbar />
       <div className='App'>
+        <Navbar />
         <Switch>
           <Route path='/about'>
             <About />

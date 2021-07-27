@@ -11,11 +11,10 @@ const Resume = () => {
                 frameBorder='0'
                 src='https://drive.google.com/file/d/1AjAt3WqBBGcpeiL7tO0RpivGlJVduVmg/preview'>
             </iframe>
-            <a href='https://drive.google.com/uc?export=download&id=1AjAt3WqBBGcpeiL7tO0RpivGlJVduVmg'>
-                <div className='download-container'>
-                    <img src={download} alt='Download Resume' className='download' />
-                    <p> Download </p>
-                </div>
+
+            <a href='https://drive.google.com/uc?export=download&id=1AjAt3WqBBGcpeiL7tO0RpivGlJVduVmg' className='resume-download'>
+                <img src={download} alt='Download Resume' className='download' />
+                <span> Download </span>
             </a>
         </div>
     )

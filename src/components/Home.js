@@ -13,7 +13,8 @@ const Home = () => {
                 <h1> Joe C Gomez </h1>
                 <h3> Software Engineer in the Houston area </h3>
             </div>
-            <div className='container-links'>
+            
+            <div className='home-links-container'>
                 <a href='https://github.com/JoeG21' alt='GitHub: JoeG1'>
                     <img className='home-links' src={github} alt='GitHub' />
                 </a>

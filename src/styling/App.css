@@ -4,67 +4,81 @@
 }
 
 .App {
-  margin-top: 7vh;
-  margin-bottom: 7vh;
+  height: 100%;
   font-size: 16px;
   font-family: courgette;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+a {
+  color: white;
+  font-family: 'Playball-Regular';
+  text-decoration: none;
+}
+
+
 .navbar {
-  font-size: 1.8vw;
+  width: 100%;
+  margin-bottom: 7vh;
   font-family: 'Playball-Regular';
   background-color: rgb(37, 37, 37);
   border-bottom: 4px solid #ffffff;
-  padding: .2vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   animation: nav-load var(--nav-load-time) ease-in;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
+.navbar a {
+  font-size: 3.5em;
 }
 
-a:hover {
-  color: rgb(150, 150, 150);
+.navbar a:hover {
+  color: rgb(37, 37, 37);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
-a:focus {
-  color: #ffbb00;
-}
 
-@media (orientation: portrait) and (max-height: 1200px) {
+
+
+/* MEDIA QUERIES  */
+
+/* PORTRAIT */
+@media (orientation: portrait) and (max-height: 1500px) {
   .navbar {
-    font-size: 5vw;
-    padding: 2vw;
+    justify-content: flex-end;
+  }
+
+  #drop-menu {
+    background-color: rgb(37, 37, 37);
+    font-size: 2em;
   }
 }
 
-@media (orientation: portrait) and (min-height: 1300px) {
+
+/* LANDSCAPE  */
+@media (orientation: landscape) and (max-width: 1000px) {
   .navbar {
-    font-size: 4.5vw;
-    padding: 2vw;
+    justify-content: flex-end;
+  }
+
+  #drop-menu {
+    background-color: rgb(37, 37, 37);
+    font-size: 2em;
   }
 }
 
-@media (orientation: landscape) and (max-width: 1200px) {
-  .navbar {
-    font-size: 4vw;
-  }
-}
 
-@media (orientation: landscape) and (min-width: 1300px) {
-  .navbar {
-    font-size: 2.5vw;
-  }
-}
 
-.loading {
+
+
+
+
+/* .loading {
   height: 100vh;
   width: 100vw;
   font-size: 1vw;
@@ -75,22 +89,10 @@ a:focus {
   color: green;
   animation-name: loading;
   animation-duration: 3.5s;
-}
+} */
 
 @keyframes loading {
   0% {background-color: #000000;}
   50% {background-color: #000000;}
   100% {background-image: white;}
-}
-
-@media (orientation: portrait) {
-  .loading {
-    font-size: 5vw;
-  }
-}
-
-@media (orientation: landscape), (max-width: 1500px) {
-  .loading {
-    font-size: 2vw;
-  }
 }
