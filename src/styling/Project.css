@@ -110,10 +110,6 @@ img.web-git-pic {
         height: fit-content;
         width: 90%;
     }
-
-    .project-des {
-        margin-bottom: 2vh;
-    }
 }
 
 
@@ -122,9 +118,5 @@ img.web-git-pic {
     .project-card {
         height: fit-content;
         width: 90%;
-    }
-
-    .project-des {
-        margin-bottom: 2vh;
     }
 }
