@@ -17,9 +17,10 @@ const Projects = () => {
                 <div className='project-des'>
                     <h2> AstraScapes, LLC </h2>
                     <p>
-                        AstraScapes, LCC is a landscaping bushiness that approached us, Ted Neben and I,
-                        to build their company's webpage.
-                        After a few weeks we built out a fully functional webpage using React.js and many other tools.
+                        Created with JavaScript and React.
+                        Utilizing hooks, Email.js to establish communication through contact form for customers,
+                        and designed with CSS and Material-UI.
+                        Implemented Media Queries for responsiveness to all screen sizes and hosted by Netlify.
                     </p>
                     <h2> Tech Stack </h2>
                     <p>
