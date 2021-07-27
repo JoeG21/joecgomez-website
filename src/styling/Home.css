@@ -51,6 +51,14 @@ img.home-links {
    .home-links-container {
        flex-wrap: wrap;
    }
+
+   img.home-links {
+       height: 10vh;
+       width: 80%;
+   }
+
+
+
 }
 
 
