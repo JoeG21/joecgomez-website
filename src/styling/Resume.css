@@ -44,6 +44,10 @@ img.download {
         width: 90%;
     }
 
+    a.resume-download {
+        font-size: 1em;
+    }
+
     img.download {
         height: 4vh;
         width: 25%;
