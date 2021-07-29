@@ -31,7 +31,7 @@ body {
 /* PORTRAIT */
 @media (orientation: portrait) and (max-height: 1500px) {
   html {
-    background: url('./pictures/background.jpg') no-repeat center center fixed;
+    background-image: url('./pictures/background.jpg');
   }
 }
 
