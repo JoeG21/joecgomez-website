@@ -23,6 +23,23 @@ body {
   --links-load-time: 1000ms;
 }
 
+
+
+
+/* MEDIA QUERIES  */
+
+/* PORTRAIT */
+@media (orientation: portrait) and (max-height: 1500px) {
+  html {
+    background: url('./pictures/background.jpg') no-repeat center center fixed;
+  }
+}
+
+
+
+
+/* KEYFRAMES  */
+
 @keyframes nav-load {
   0% {
     transform: translateY(-100%);
