@@ -74,8 +74,8 @@ const App = () => {
 
   return (
     <>
-      {/* {loading ? loadingComponent : application} */}
-      {application}
+      {loading ? loadingComponent : application}
+      {/* {application} */}
     </>
   );
 }
