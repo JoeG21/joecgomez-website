@@ -27,7 +27,7 @@ const Projects = () => {
                         JavaScript <br />
                         React.js <br />
                         Material-UI <br />
-                        Email.js <br />
+                        Email.js
                     </p>
                 </div>
 
