@@ -13,8 +13,8 @@
     background-color: rgb(37, 37, 37);
     border: white solid 4px;
     border-radius: 8px;
-    width: 40%;
-    width: 650px;
+    height: 750px;
+    width: 700px;
     margin: 2vh;
     display: flex;
     flex-direction: column;
