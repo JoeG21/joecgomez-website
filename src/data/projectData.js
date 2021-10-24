@@ -35,7 +35,7 @@ let projectCards = [
         id: 5,
         video: 'https://www.youtube.com/embed/wI97XXtrkwA',
         title: 'Jmakon Prime',
-        des: ' Jmakon Prime is an e-commerce website that allows you to browse through items. Users can also add items to their cart without having to be logged in. However, if a user does want to checkout without being logged in, then it redirects you to the Sign up / Log in page.',
+        des: 'Jmakon Prime is an e-commerce website that allows you to browse through items. Users can also add items to their cart without having to be logged in. However, if a user does want to checkout without being logged in, then it redirects you to the Sign up / Log in page.',
         tech: ['Ruby on Rails', 'Bootstrap'],
         repo: 'https://github.com/JoeG21/Jmakon-Prime'
     }
