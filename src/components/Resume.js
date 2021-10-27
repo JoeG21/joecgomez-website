@@ -9,10 +9,10 @@ const Resume = () => {
                 title="Joe C Gomez's Resume"
                 className='resume'
                 frameBorder='0'
-                src='https://drive.google.com/file/d/1dioDT8cLVd8X9PdTsaZcrvtFOkkZmu-U/preview'>
+                src='https://drive.google.com/file/d/1lSrZotNPSUluojuQ0V9neCJHfjpWqisK/preview'>
             </iframe>
 
-            <a href='https://drive.google.com/uc?export=download&id=1dioDT8cLVd8X9PdTsaZcrvtFOkkZmu-U' className='resume-download'>
+            <a href='https://drive.google.com/uc?export=download&id=1lSrZotNPSUluojuQ0V9neCJHfjpWqisK' className='resume-download'>
                 <img src={download} alt='Download Resume' className='download' />
                 <span> Download </span>
             </a>
