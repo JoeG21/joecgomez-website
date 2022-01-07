@@ -4,7 +4,7 @@ import github from '../pictures/githubLogo.png'
 import linkedIn from '../pictures/linkedInLogo.png'
 import medium from '../pictures/mediumLogo.png'
 import youtube from '../pictures/youtubeLogo.png'
-import twitter from '../pictures/twitterLogo.png'
+// import twitter from '../pictures/twitterLogo.png'
 
 const Home = () => {
     return (
@@ -27,9 +27,9 @@ const Home = () => {
                 <a href='https://www.youtube.com/channel/UCwLqQxU0xFZefEVC3oix7Dw' alt='YouTube: Joe C Gomez'>
                     <img className='home-links' src={youtube} alt='YouTube' />
                 </a>
-                <a href='https://twitter.com/devjoecgomez' alt='Twitter: @devjoecgomez'>
+                {/* <a href='https://twitter.com/devjoecgomez' alt='Twitter: @devjoecgomez'>
                     <img className='home-links' src={twitter} alt='Twitter' />
-                </a>
+                </a> */}
             </div>
         </div>
     )
