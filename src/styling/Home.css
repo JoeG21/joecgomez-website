@@ -1,58 +1,18 @@
 .home {
-    width: 90vw;
-    font-family: 'Playball-Regular';
-    color: rgb(0, 0, 0);
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: rgb(37, 37, 37);
-    font-size: 5vw;
+    /* background-color: brown; */
+    height: 75vh;
+    width: 100%;
+    font-size: 5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.name {
-    animation: name-load var(--name-load-time) ease-out;
-}
-
-.home-links-container {
-    display: flex;
-    justify-content: space-evenly;
-    animation: links-load var(--links-load-time) ease-out;
-}
-
-.home-links-container a {
-    margin: 0 1vh 0 1vh;
-}
-
-img.home-links {
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 8px;
-    height: 15vh;
-    width: 10vw;
-    padding: .5vh;
-}
-
-
-
-
-/* MEDIA QUERIES  */
-
-/* PORTRAIT */
-@media (orientation: portrait) and (max-height: 1500px) {
-    .name h1{
-        font-size: 3em;
-    }
-
-    .name h3 {
-        font-size: 1.25em;
-    }
-
-   .home-links-container {
-       flex-wrap: wrap;
-   }
-
-   img.home-links {
-       height: 10vh;
-       width: 20vw;
-   }
+.home h1 {
+    text-shadow:
+    -1px -1px 0 #4d3f2e,  
+    1px -1px 0 #4d3f2e,
+    -1px 1px 0 #4d3f2e,
+    1px 1px 0 #4d3f2e;
 }

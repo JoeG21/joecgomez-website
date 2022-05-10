@@ -2,15 +2,15 @@ import { useState, useEffect } from 'react'
 import Navbar from './Navbar';
 import Home from '../components/Home';
 import Projects from '../components/Projects';
-import Resume from '../components/Resume';
+import Blogs from '../components/Blogs';
 import Contact from '../components/Contact';
-import About from '../components/About'
+import Footer from './Footer'
 
 import '../styling/App.css'
 import '../styling/Home.css'
 import '../styling/Project.css'
 import '../styling/About.css'
-import '../styling/Resume.css'
+import '../styling/Blogs.css'
 import '../styling/Contact.css'
 import Typical from 'react-typical'
 import {
@@ -48,34 +48,37 @@ const App = () => {
 
   let application = (
     <BrowserRouter>
+      <Navbar />
       <div className='App'>
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
-          <Route path='/about'>
-            <About />
-          </Route>
           <Route path='/contact'>
             <Contact />
           </Route>
           <Route path='/projects'>
             <Projects />
           </Route>
-          <Route path='/resume'>
-            <Resume />
+          <Route path='/blogs'>
+            <Blogs />
           </Route>
           <Route path='/'>
             <Home />
           </Route>
         </Switch>
+        {/* <Footer /> */}
       </div>
+      {/* <Footer /> */}
     </BrowserRouter>
   )
 
 
   return (
     <>
-      {loading ? loadingComponent : application}
-      {/* {application} */}
+      <div className='App-Container'>
+        {/* {loading ? loadingComponent : application} */}
+        {application}
+      </div>
+      <Footer />
     </>
   );
 }

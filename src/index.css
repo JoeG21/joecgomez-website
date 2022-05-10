@@ -1,82 +1,48 @@
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
 }
 
-html {
-  background: url('./pictures/background.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  --nav-load-time: 400ms;
-  --name-load-time: 1000ms;
-  --links-load-time: 1000ms;
+  /* background: rgb(249, 213, 103); */
+  background: linear-gradient(169deg, rgba(249, 213, 103, 1) 20%, rgba(223, 122, 36, 1) 82%);
+  /* background: repeating-linear-gradient(rgba(249, 213, 103, 1) , rgba(223, 122, 36, 1) 5%); */
+  /* background: repeating-linear-gradient(rgba(249, 213, 103, 1), rgba(223, 122, 36, 1) 10%, #1c120c 20%); */
+  font-family: "Raleway-Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  /* background: rgb(223,122,36);
+    background: linear-gradient(169deg, rgba(223,122,36,1) 20%, rgba(249,213,103,1) 82%); */
+    /* display: flex;
+    justify-content: center; */
 }
 
-
-
-
-/* MEDIA QUERIES  */
-
-/* PORTRAIT */
-@media (orientation: portrait) and (max-height: 1500px) {
-  body:after{
-    content:"";
-    position:fixed; /* stretch a fixed position to the whole screen */
-    top:0;
-    height:100vh; /* fix for mobile browser address bar appearing disappearing */
-    left:0;
-    right:0;
-    z-index:-1; /* needed to keep in the background */
-    background: url('./pictures/background.jpg') center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+a {
+  color: #1c120c;
+  text-decoration: none;
 }
 
-
-
-
-/* KEYFRAMES  */
-
-@keyframes nav-load {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
-@keyframes name-load {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+h1 {
+  margin: 0;
 }
 
-@keyframes links-load {
-  0% {
-    transform: translateY(-100%);
-  }
+textarea {
+  resize: none;
+}
 
-  100% {
-    transform: translateY(0);
-  }
+button:hover {
+  cursor: pointer;
+}
+
+input:focus, textarea:focus {
+  outline: none;
 }

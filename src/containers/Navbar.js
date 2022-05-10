@@ -2,10 +2,13 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom'
 
+import logo from '../pictures/svg/logo.svg'
+
 import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import { Home } from '@material-ui/icons';
 
 const Navbar = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -34,17 +37,18 @@ const Navbar = () => {
     const ITEM_HEIGHT = 48;
 
     const options = [
-        <NavLink to='/'>
-            Home
-        </NavLink>,
-        <NavLink to='/about'>
+        <a href='/#about'>
             About
-        </NavLink>,
+        </a>,
         <NavLink to='/projects'>
             Projects
         </NavLink>,
-        <NavLink to='/resume'>
-            Resume
+        // windowWidth < 1200 ? <NavLink to='/'> Home </NavLink> : <a href='/' alt='Home Page'> <img src={logo} className='logo' /> </a>,
+        // <a href='/' alt='Home Page'>
+        //     <img src={logo} className='logo' />
+        // </a>,
+        <NavLink to='/blogs'>
+            Blogs
         </NavLink>,
         <NavLink to='/contact'>
             Contact
@@ -75,8 +79,13 @@ const Navbar = () => {
                     },
                 }}
             >
+
+                {/* <MenuItem onClick={handleClose} id='drop-menu'>
+                    <NavLink to='/'> Home </NavLink>
+                </MenuItem> */}
                 {options.map((option) => (
                     <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose} id='drop-menu'>
+                        {/* <NavLink to='/'> Home </NavLink> */}
                         {option}
                     </MenuItem>
                 ))}
@@ -94,6 +103,11 @@ const Navbar = () => {
 
     return (
         <div className='navbar'>
+            <div className='logo-con'>
+                <a href='/' alt='Home Page'>
+                    <img src={logo} className='logo' />
+                </a>
+            </div>
             {windowWidth < 1200 ? portrait : landscape}
         </div>
     )

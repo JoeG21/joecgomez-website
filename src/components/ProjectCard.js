@@ -1,51 +1,102 @@
 import React from 'react'
+import { useState } from 'react'
 
-import github from '../pictures/githubLogo.png'
-import webPageIcon from '../pictures/webpage-icon.png'
+import gitHub from '../pictures/svg/github.svg'
+import wwwLogo from '../pictures/svg/wwwLogo.svg'
+
 
 const ProjectCard = (props) => {
-    const webGit = (
-        <div className='project-link-container'>
-            <a href={props.card.repo} className='project-link-web-git' alt='GitHub: JoeG21'>
-                <img src={github} className='web-git-pic' alt='GitHub: JoeG21' />
-                <h3> Repository </h3>
-            </a>
-            <a href={'https://www.astrascapes.com/'} className='project-link-web-git' alt='AstraScapes'>
-                <img src={webPageIcon} className='web-git-pic' alt='https://www.astrascapes.com/' />
-                <h3> WebPage </h3>
+    const [expand, setExpand] = useState(false)
 
-            </a>
-        </div>
-    )
+    const handClick = () => {
+        setExpand(prevState => !prevState)
+    }
 
-    const git = (
-        <a href={props.card.repo} className='project-link' alt='GitHub: JoeG21'>
-            <img src={github} className='git-pic' alt='GitHub: JoeG21' />
-            <h3> Repository </h3>
+    const justRepo = (
+        <a href={props.card.repo} alt='GitHub Repo'>
+            Repository
+            <img src={gitHub} className='repo' alt='GitHub Logo' />
         </a>
     )
 
+    const repoWeb = (
+        <div className='repo-btn'>
+            <a href={props.card.repo} alt='GitHub Repo'>
+                Repository
+                <img src={gitHub} className='repo' alt='GitHub Logo' />
+            </a>
 
-    return (
-        <div className='project-card'>
-            <iframe
-                className='project-vid'
-                title='Project Video'
-                src={props.card.video}
-                frameBorder='0' allowFullScreen>
-            </iframe>
+            <a href={props.card.website} alt='GitHub Repo'>
+                Website
+                <img src={wwwLogo} className='repo' alt='Website Logo' />
+            </a>
+        </div>
+    )
+
+    const halfCard = (
+        <div className='half-project-card' onClick={() => handClick()}>
+            <img src={props.card.photo} className='pic-vid-project' alt='Full Project' />
+
+            <div className='test-ti'>
+                {props.card.id <= 3 ?
+                    props.card.title
+                    :
+                    <img src={props.card.title} className='project-title' alt='Project Title' />
+                }
+            </div>
+        </div>
+    )
+
+    const fullCard = (
+        <div className='full-project-card' onClick={() => handClick()}>
+            <iframe src={props.card.video} title='Project' className='pic-vid-project' frameBorder='0' allowFullScreen />
+
+            <div className='test-ti'>
+                {props.card.id <= 3 ?
+                    props.card.title
+                    :
+                    <img src={props.card.title} className='project-title' alt='Project Title' />
+                }
+            </div>
+
 
             <div className='project-des'>
-                <h2> {props.card.title} </h2>
                 <p>
                     {props.card.des}
                 </p>
-                <h2> Tech Stack </h2>
-                {props.card.tech.map(t => <span> {t} <br /> </span>)}
-            </div>
 
-            {props.card.id === 1 ? webGit : git}
+                <div className='tech-stack'>
+                    <h2> Tech Stack </h2>
+                    <ul>
+                        {props.card.tech.map(t => <img key={t} src={t} className='tech-logo' />)}
+                    </ul>
+                </div>
+
+                {props.card.id === 2 ? repoWeb : justRepo}
+
+                {/* <div className='repo-btn'>
+                    <a href={props.card.repo} alt='GitHub Repo'>
+                        Repository
+                        <img src={gitHub} className='repo' alt='GitHub Logo' />
+                    </a>
+
+                    <a href={props.card.repo} alt='GitHub Repo'>
+                        Repository
+                        <img src={gitHub} className='repo' alt='GitHub Logo' />
+                    </a>
+                </div> */}
+            </div>
         </div>
+    )
+
+
+
+
+
+    return (
+        <>
+            {expand === false ? halfCard : fullCard}
+        </>
     )
 }
 
