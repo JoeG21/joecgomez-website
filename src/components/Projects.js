@@ -1,12 +1,12 @@
 import React from 'react'
 
 import ProjectCard from './ProjectCard'
-import projectCards from '../data/projectData'
+import projectData from '../data/projectData'
 
 const Projects = () => {
     return (
-        <div className='project-container'>
-            {projectCards.map(card => <ProjectCard key={card.id} card={card} />)}
+        <div className='Project'>
+            {projectData.map(card => <ProjectCard key={card.id} card={card} />)}
         </div>
     )
 }

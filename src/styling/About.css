@@ -1,44 +1,12 @@
-.about-container {
-    background-color: rgb(0, 0, 0, .5);
-    border-radius: 8px;
-    width: 90vw;
-    margin-bottom: 7vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#about {
+    background-color: rgb(54, 54, 112);
+    margin-top: 150px;
+    font-size: 2.25rem;
 }
 
-
-img.about-pic {
+img.headshot {
     height: auto;
-    width: 35%;
-    margin-top: 2vh;
-    border: 4px white solid;
-    border-radius: 8px;
-}
-
-.about-des {
-    color: #d7fff5;
-    width: 95%;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 10px rgb(0, 0, 0);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-}
-
-
-
-
-/* MEDIA QUERIES  */
-
-/* PORTRAIT */
-@media (orientation: portrait) and (max-height: 1500px) {
-    img.about-pic {
-        width: 80%;
-    }
-
-    .about-des {
-        font-size: 1.6em;
-    }
+    width: 650px;
+    float: left;
+    margin-right: 40px;
 }
