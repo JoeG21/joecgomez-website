@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Navbar from './Navbar';
 import Home from '../components/Home';
+import About from '../components/About';
 import Projects from '../components/Projects';
 import Blogs from '../components/Blogs';
 import Contact from '../components/Contact';
@@ -16,7 +17,8 @@ import Typical from 'react-typical'
 import {
   BrowserRouter,
   Route,
-  Switch
+  Switch,
+  HashRouter
 } from 'react-router-dom';
 
 const App = () => {
@@ -61,8 +63,20 @@ const App = () => {
           <Route path='/blogs'>
             <Blogs />
           </Route>
+          {/* <Route path='/#about'>
+            <About />
+          </Route> */}
+          {/* <Route path='/about'>
+            <About />
+          </Route> */}
+
+          {/* <HashRouter path='/#about'>
+            <About />
+          </HashRouter> */}
           <Route path='/'>
             <Home />
+            {/* <About /> */}
+            {/* <Route path='/about'> <About /> </Route> */}
           </Route>
         </Switch>
         {/* <Footer /> */}

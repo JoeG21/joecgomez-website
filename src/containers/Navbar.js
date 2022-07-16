@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import logo from '../pictures/svg/logo.svg'
 
@@ -37,9 +37,23 @@ const Navbar = () => {
     const ITEM_HEIGHT = 48;
 
     const options = [
-        <a href='/#about'>
-            About
-        </a>,
+        // <a href="/#about">
+        //     About
+        // </a>,
+        // <Link to={{
+        //     pathname: '/',
+        //     hash: '#about'
+        // }}>
+        //     About
+        // </Link>,
+        // <Link to={{
+        //     pathname: '/about',
+        // }}>
+        //     About
+        // </Link>,
+        // <NavLink to='about'>
+        //     About
+        // </NavLink>,
         <NavLink to='/projects'>
             Projects
         </NavLink>,

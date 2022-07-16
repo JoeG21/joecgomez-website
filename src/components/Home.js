@@ -5,6 +5,11 @@ import React from 'react';
 // import medium from '../pictures/medium.svg'
 // import youtube from '../pictures/youtube.svg'
 
+import {
+    NavLink,Route
+  } from 'react-router-dom';
+
+
 import About from './About'
 
 const Home = () => {
@@ -18,8 +23,11 @@ const Home = () => {
             <div id='about'>
                 <About />
             </div>
-        </>
+            {/* <Route path='/about'>
+                <About />
+            </Route> */}
 
+        </>
     )
 }
 
